@@ -1,0 +1,50 @@
+body{
+  background-image: linear-gradient(pink,#ca3591,#30073a);
+  height:100vh;
+}
+.div-wave{
+  background-image: url("img/wave\ \(2\).png");
+  background-size: cover;
+  position: absolute;
+  bottom:0;
+  height:143px;
+  width:100%;
+  opacity: 1;
+  animation:waveAnimate 10s infinite;
+ 
+}
+.div-wave::before{
+  content:"";
+  background-image: url("img/wave\ \(2\).png");
+  background-size: cover;
+  position: absolute;
+  bottom:0;
+  height:143px;
+  width:100%;
+  opacity: 0.2;
+  animation:waveAnimate 16s infinite;
+ 
+}
+.div-wave::after{
+  content:"";
+  background-image: url("img/wave\ \(2\).png");
+  background-size: cover;
+  position: absolute;
+  bottom:0;
+  height:143px;
+  width:100%;
+  opacity: 0.5;
+  animation:waveAnimate 6s infinite;
+
+}
+@keyframes waveAnimate {
+  0%{
+    background-position: 0;
+  }
+  50%{
+    background-position:1360px;
+  }
+  100%{
+    background-position: 0;
+  }
+}
