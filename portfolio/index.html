@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="icomoonPortfolio/style.css" />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+   
+  </head>
+  <body id="body">
+    <script src="Js/logic.js" defer></script>
+
+    <header>
+      <span class="icon-menu"></span>
+      <nav>
+        <a href="#About">About</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Educations">Educations</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+      <span class="icon-star-half"></span>
+    </header>
+
+    <section id="About" class="About">
+      <div class="divcontainet">
+        <p class="o">Welcome to my portfolio website!</p>
+        <h2>Hey folks , I'm</h2>
+        <h1 class="h">W</h1>
+
+        <p class="o2">
+          Some text about me. Some text about me. I am lorem ipsum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+        <button class="cv">
+          <a href="Mycv\cv.docx" download>Download CV</a>
+        </button>
+      </div>
+      <div>
+        <img id="imgDark" src="img/profil2.png" />
+      </div>
+    </section>
+
+    <section id="Projects">
+      <h1>Some Projects</h1>
+      <span class="icon-arrow-right2"></span>
+      <span class="icon-arrow-left2"></span>
+      <div class="sliderDiv">
+        <img src="img/1.png" />
+      </div>
+      <div class="sliderDiv">
+        <img src="img/2.png" />
+      </div>
+      <div class="sliderDiv">
+        <img src="img/3.png" />
+      </div>
+      <div class="sliderDiv">
+        <img src="img/4.jpg" />
+      </div>
+      <div class="sliderDiv">
+        <img src="img/5.png" />
+      </div>
+
+      <div class="sliderDiv">
+        <img src="img/6.jpg" />
+      </div>
+    </section>
+
+    <section id="Educations">
+      <h1 class="title">Educations</h1>
+      <div class="div_felx">
+        <div>
+          <h3>HTML</h3>
+          <div>
+            <span class="span" data-width="90%"><p>90%</p></span>
+          </div>
+          <h3>CSS</h3>
+          <div>
+            <span class="span" data-width="75%"><p>75%</p></span>
+          </div>
+          <h3>JAVASCRIPT</h3>
+          <div>
+            <span class="span" data-width="50%"><p>50%</p></span>
+          </div>
+          <h3>SASS</h3>
+          <div>
+            <span class="span" data-width="40%"><p>40%</p></span>
+          </div>
+          <h3>bootstrap</h3>
+          <div>
+            <span class="span" data-width="70%"><p>70%</p></span>
+          </div>
+        </div>
+        <div>
+          <h3>C#</h3>
+          <div>
+            <span class="span" data-width="80%"><p>80%</p></span>
+          </div>
+          <h3>Asp.Net</h3>
+          <div>
+            <span class="span" data-width="80%"><p>80%</p></span>
+          </div>
+          <h3>SQL</h3>
+          <div>
+            <span class="span" data-width="70%"><p>70%</p></span>
+          </div>
+          <h3>PHP</h3>
+          <div>
+            <span class="span" data-width="65%"><p>65%</p></span>
+          </div>
+          <h3>Laravel</h3>
+          <div>
+            <span class="span" data-width="40%"><p>40%</p></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact">
+      <h1>Contact</h1>
+      <div class="flex">
+        <div class="card">
+          <img src="img/img3.png" />
+          <h1
+            style="padding: 10px; color: rgb(187, 7, 175); text-align: center"
+          ></h1>
+          <h3 style="color: rgb(204, 199, 199); text-align: center">
+            Web developer
+          </h3>
+          <span>
+            <span class="icon-phone hoverIcon" ></span>
+            <span class="icon-mail2 hoverIcon"></span>
+            <span class="icon-facebook2 hoverIcon"></span>
+            <span class="icon-instagram hoverIcon"></span>
+          </span>
+        </div>
+        <div class="divInputs">
+          <h2>
+            Interested to work together?<br />
+            Let's talk
+          </h2>
+          <form action="" method="POST">
+            <input
+              type="text"
+              name="Name"
+              placeholder="Your Name"
+              required
+            /><br /><br />
+            <input type="email" name="Email" placeholder="Email" required />
+            <br /><br />
+            <input
+              style="height: 200px"
+              type="text"
+              name="Message"
+              placeholder="Message"
+              required
+            /><br /><br />
+            <button class="btnSend">Send me</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

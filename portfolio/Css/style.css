@@ -1,0 +1,618 @@
+* {
+  letter-spacing: 1px;
+
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  color: rgb(49, 49, 49);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* =======================
+      header
+  ===========================*/
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  right: 0;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 40px 10px #252525;
+  width: 100%;
+  margin-bottom: 10px;
+  z-index: 100000;
+}
+
+nav {
+  margin: 10px;
+}
+
+.icon-star-half {
+  font-size: 40px;
+  margin: 10px;
+}
+
+.icon-star-half:hover {
+  cursor: pointer;
+  color: rgb(156, 19, 149);
+}
+
+.icon-menu {
+  display: none;
+}
+
+nav > a {
+  all: unset;
+  width: 100%;
+  position: relative;
+  font-size: 25px;
+  text-align: center;
+  margin: 30px 10px;
+  padding: 30px 10px 10px 10px;
+}
+
+header > nav > a:hover {
+  color: rgb(156, 19, 149);
+  cursor: pointer;
+}
+
+header > nav > a::after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -6px;
+  left: 0;
+  border-radius: 1px solid;
+  background-color: rgb(156, 19, 149);
+  transition: 0.3s;
+}
+
+header > nav > a:hover::after {
+  content: "";
+  width: 100%;
+}
+
+.hederFixed {
+  position: fixed;
+  z-index: 9999;
+}
+
+/* =======================
+     About
+  ===========================*/
+#About {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 44px;
+}
+
+#imgDark {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  animation: A 2s infinite;
+  -webkit-animation: A 2s infinite;
+}
+
+@keyframes A {
+  0% {
+    border: 10px solid rgb(156, 19, 149);
+  }
+  50% {
+    border: 20px solid rgb(61, 22, 59);
+  }
+
+  100% {
+    border: 10px solid rgb(156, 19, 149);
+  }
+}
+
+.divcontainet {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.o {
+  margin: 120px 0 10px 50px;
+  font: bold;
+  font-size: 20px;
+  color: gray;
+}
+
+.divcontainet > h2 {
+  color: black;
+  font-size: 40px;
+}
+
+.h {
+  color: rgb(187, 7, 175);
+  margin-left: 40px;
+  font-size: 40px;
+}
+
+.o2 {
+  margin-top: 12px;
+  font-size: 13px;
+  color: gray;
+}
+.cv > a {
+  all: unset;
+}
+.cv {
+  all: unset;
+  margin-top: 40px;
+  margin-left: 12px;
+  background-color: rgb(187, 7, 175);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.cv:hover {
+  cursor: pointer;
+  background-color: gray;
+  color: rgb(187, 7, 175);
+}
+
+/* =======================
+     Project
+  ===========================*/
+#Projects {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 100px 0;
+}
+
+#Projects > h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(49, 49, 49);
+  text-align: center;
+}
+
+.sliderDiv {
+  margin: 10px auto;
+  border-radius: 12px;
+  height: 500px;
+  width: 600px;
+  box-shadow: 10px 10px 40px 1px gray;
+  display: none;
+}
+
+.sliderDiv > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+}
+
+.icon-arrow-right2,
+.icon-arrow-left2 {
+  position: absolute;
+
+  top: 50%;
+  font-size: 50px;
+}
+
+.icon-arrow-right2:hover,
+.icon-arrow-left2:hover {
+  color: rgb(187, 7, 175);
+}
+
+.icon-arrow-left2 {
+  left: 0;
+}
+
+.icon-arrow-right2 {
+  right: 0px;
+}
+
+/* =======================
+     Education
+  ===========================*/
+#Educations {
+  margin: 50px 0;
+  padding: 50px 0 100px 0;
+}
+
+#Educations > h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(49, 49, 49);
+  text-align: center;
+}
+
+.div_felx {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.div_felx > div > div {
+  width: 600px;
+  background-color: white;
+  height: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.span {
+  display: block;
+  background-color: rgb(187, 7, 175);
+  height: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  transition: width 1s;
+}
+
+.span > p {
+  text-align: center;
+}
+
+.div_felx > div > h3 {
+  margin: 20px 0;
+  margin-left: 10px;
+}
+
+/* =======================
+     Contact
+  ===========================*/
+
+#Contact > h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(49, 49, 49);
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.divInputs {
+  margin: 10px 0;
+}
+
+.divInputs > h2 {
+  font-size: 26px;
+  margin: 40px;
+}
+
+.divInputs > form > input {
+  all: unset;
+  display: block;
+  margin: 0 auto;
+  margin-left: 30px;
+  width: 500px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid;
+  background-color: white;
+}
+
+.divInputs > form > input:hover {
+  border: 1px solid rgb(187, 7, 175);
+}
+
+.btnSend {
+  all: unset;
+  display: block;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: rgb(187, 7, 175);
+  width: 200px;
+  text-align: center;
+  margin: 10px auto;
+  margin-top: 0;
+  color: white;
+  font: bold;
+}
+
+.btnSend:hover {
+  cursor: pointer;
+  background-color: gray;
+  color: rgb(187, 7, 175);
+}
+.card {
+  margin-top: 150px;
+  background-color: gray;
+  width: 300px;
+  height: 400px;
+  border-radius: 12px;
+}
+.card > span {
+  display: block;
+  margin: 20px;
+}
+.card > img {
+  width: 300px;
+}
+.card > span {
+  display: flex;
+  justify-content: space-around;
+}
+.card > span > span {
+  font-size: 40px;
+  position: relative;
+}
+.card > span > span > p {
+  font-size: 15px;
+  position: absolute;
+  left: -10px;
+  visibility: hidden;
+  width: auto;
+  background-color: rgb(156, 19, 149);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+  margin-left: -60px;
+}
+.card > span > span > p::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgb(156, 19, 149) transparent;
+}
+.hoverIcon:hover p {
+  visibility: visible;
+  cursor: pointer;
+}
+.icon-phone {
+  color: rgb(7, 54, 7);
+}
+.icon-mail2 {
+  color: rgb(100, 7, 7);
+}
+.icon-mail2:hover p::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 25%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparen rgb(156, 19, 149) transparent;
+}
+.icon-facebook2 {
+  color: rgb(21, 21, 73);
+}
+.icon-facebook2:hover p::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 70%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgb(156, 19, 149) transparent;
+}
+.icon-instagram {
+  color: rgb(80, 17, 77);
+}
+.icon-instagram:hover p::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 35%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgb(156, 19, 149) transparent;
+}
+/* =======================
+      Dark Mode
+  ===========================*/
+.darkMode {
+  background-color: black;
+}
+
+.darkMode > header {
+  background-color: black;
+  box-shadow: none;
+  color: gray;
+}
+
+.darkMode > header > .icon-star-half {
+  color: rgb(156, 19, 149);
+}
+.darkMode > header > .icon-menu {
+  color: #f2f2f2;
+}
+
+.darkMode > #About > div > h2 {
+  color: rgb(233, 223, 223);
+  font-size: 40px;
+}
+
+.darkMode > #Projects > div {
+  box-shadow: none;
+}
+
+/* =======================
+      responsive
+  ===========================*/
+@media only screen and (max-width: 700px) {
+  /* =======================
+   header
+===========================*/
+  header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    right: 0;
+
+    z-index: 100000;
+
+    background-color: rgb(156, 19, 149);
+    box-shadow: none;
+  }
+  nav {
+    display: none;
+    background-color: rgb(156, 19, 149);
+    animation: animationHeader 0.5s 1;
+    -webkit-animation: animationHeader 0.8s 1;
+    color: #f2f2f2;
+  }
+  @keyframes animationHeader {
+    0% {
+      opacity: 0;
+    }
+
+    0% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  .showHeader {
+    display: block;
+  }
+  nav {
+    padding-top: 0px;
+  }
+  header > nav > a {
+    display: block;
+    text-align: left;
+  }
+  header > nav > a:hover {
+    color: #c4c2c2;
+  }
+  header > nav > a::after {
+    content: " ";
+    background-color: #c4c2c2;
+  }
+  .icon-star-half {
+    all: unset;
+
+    font-size: 35px;
+
+    color: white;
+    position: absolute;
+    right: 10px;
+
+    z-index: 100;
+  }
+  .icon-star-half:hover {
+    cursor: pointer;
+    color: rgb(61, 22, 59);
+  }
+  .icon-menu {
+    top: 0;
+    background-color: #c4c2c2;
+    background-color: rgb(156, 19, 149);
+    color: white;
+    font-size: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    display: block;
+  }
+
+  /* =======================
+ About
+===========================*/
+
+  #imgDark {
+    width: 350px;
+    height: 300px;
+  }
+  #About {
+    padding-top: 30px;
+  }
+
+  /* =======================
+ Project
+===========================*/
+  #Projects {
+    width: 100%;
+  }
+  .sliderDiv {
+    height: 300px;
+    width: 70%;
+  }
+  .sliderDiv > img {
+    height: 300px;
+    width: 100%;
+  }
+  /* =======================
+ Education
+===========================*/
+  .div_felx > div > div {
+    width: 300px;
+    height: 20px;
+  }
+  .span {
+    height: 20px;
+  }
+  /* =======================
+ contact
+===========================*/
+  .divInputs {
+    width: 330px;
+  }
+  .card {
+    width: 330px;
+  }
+  .divInputs > form > input {
+    all: unset;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid;
+    background-color: white;
+  }
+  /* =======================
+  Dark Mode
+===========================*/
+  .darkMode > header {
+    background-color: rgb(156, 19, 149);
+    color: #c4c2c2;
+  }
+  .darkMode > header > span {
+    color: unset;
+  }
+  .darkMode > header > .icon-star-half {
+    color: white;
+  }
+}
